@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /admin/dashboard
+Disallow: /review/
+
+Sitemap: https://albo-fitness.com/sitemap.xml

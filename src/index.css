@@ -1,0 +1,619 @@
+/* =========================================================
+   GOOGLE FONTS — MUST STAY AT THE VERY TOP
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   TAILWIND
+   ========================================================= */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* =========================================================
+   ALBO FITNESS DESIGN SYSTEM
+   BLACK / ORANGE / WHITE
+   ========================================================= */
+
+:root {
+  --albo-black: #050505;
+  --albo-black-soft: #0b0b0b;
+
+  --albo-surface: #111111;
+  --albo-surface-2: #171717;
+
+  --albo-white: #f7f7f5;
+  --albo-muted: #a3a3a3;
+
+  --albo-orange: #e85d2a;
+  --albo-orange-dark: #c9471b;
+
+  --albo-line: #292929;
+
+  --font-display:
+    'Anton',
+    Impact,
+    'Arial Narrow',
+    sans-serif;
+
+  --font-condensed:
+    'Barlow Condensed',
+    'Arial Narrow',
+    sans-serif;
+
+  --font-body:
+    'Inter',
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+
+  background: var(--albo-black);
+  color: var(--albo-white);
+}
+
+body {
+  overflow-x: hidden;
+
+  font-family: var(--font-body);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--albo-orange);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--albo-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--albo-orange);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--albo-orange-dark);
+}
+
+
+/* =========================================================
+   GLOBAL TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2 {
+  font-family: var(--font-display);
+
+  color: var(--albo-white);
+
+  font-weight: 400;
+
+  letter-spacing: 0.005em;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-condensed);
+
+  color: var(--albo-white);
+
+  font-weight: 800;
+
+  letter-spacing: -0.02em;
+}
+
+p,
+span,
+label,
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+}
+
+button {
+  font-family: var(--font-condensed);
+}
+
+
+/* =========================================================
+   EDITORIAL DISPLAY TYPOGRAPHY
+   ========================================================= */
+
+.font-display,
+.section-display,
+.auth-display {
+  font-family: var(--font-display);
+
+  font-weight: 400;
+
+  letter-spacing: 0.005em;
+}
+
+.section-display {
+  font-size: clamp(
+    3.7rem,
+    9vw,
+    8.5rem
+  );
+
+  line-height: 0.88;
+
+  text-transform: uppercase;
+}
+
+.section-kicker,
+.auth-kicker {
+  font-family: var(--font-body);
+
+  color: var(--albo-orange);
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.34em;
+
+  line-height: 1.4;
+
+  text-transform: uppercase;
+}
+
+.auth-display {
+  font-size: clamp(
+    3.4rem,
+    7vw,
+    7.5rem
+  );
+
+  line-height: 0.86;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   LINKS AND BUTTONS
+   ========================================================= */
+
+a,
+button {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   SECTION SYSTEM
+   ========================================================= */
+
+section {
+  position: relative;
+
+  background-color: var(--albo-black);
+}
+
+
+/* =========================================================
+   ORANGE COLOR UTILITIES
+   ========================================================= */
+
+.text-orange-100,
+.text-orange-200,
+.text-orange-300,
+.text-orange-400,
+.text-orange-500,
+.text-orange-600 {
+  color: var(--albo-orange) !important;
+}
+
+.border-orange-300,
+.border-orange-400,
+.border-orange-500,
+.border-orange-600 {
+  border-color: rgba(
+    232,
+    93,
+    42,
+    0.7
+  ) !important;
+}
+
+.bg-orange-500,
+.bg-orange-600 {
+  background-color: var(--albo-orange) !important;
+}
+
+.hover\:bg-orange-500:hover,
+.hover\:bg-orange-600:hover,
+.hover\:bg-orange-700:hover {
+  background-color: var(--albo-orange-dark) !important;
+}
+
+
+/* =========================================================
+   OLD GOLD CLASS COMPATIBILITY
+   ========================================================= */
+
+.gold-accent,
+.text-gold {
+  color: var(--albo-orange);
+}
+
+.gold-border {
+  border-color: var(--albo-orange);
+}
+
+.gold-bg,
+.btn-gold {
+  background: var(--albo-orange);
+
+  color: #ffffff;
+}
+
+.gold-divider {
+  width: 56px;
+  height: 3px;
+
+  background: var(--albo-orange);
+
+  border-radius: 0;
+}
+
+.btn-gold,
+.btn-outline-gold {
+  border-radius: 2px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.12em;
+}
+
+.btn-gold:hover {
+  background: var(--albo-orange-dark);
+
+  box-shadow: none;
+
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  color: var(--albo-white);
+
+  border-color: var(--albo-orange);
+}
+
+.btn-outline-gold:hover {
+  background: var(--albo-orange);
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   PREMIUM CARD
+   ========================================================= */
+
+.premium-card {
+  background: var(--albo-surface);
+
+  border: 1px solid var(--albo-line);
+
+  border-radius: 2px;
+
+  box-shadow: none;
+
+  transition:
+    background-color 0.26s ease,
+    border-color 0.26s ease,
+    transform 0.26s ease;
+}
+
+.premium-card:hover {
+  border-color: var(--albo-orange);
+
+  box-shadow: none;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TESTIMONIAL CARD
+   ========================================================= */
+
+.testimonial-card {
+  transition:
+    border-color 0.26s ease,
+    background-color 0.26s ease,
+    transform 0.26s ease;
+}
+
+.testimonial-card:hover {
+  animation: none;
+
+  transform: translateY(-4px);
+}
+
+.quote-mark {
+  font-family: Georgia, serif;
+
+  font-size: 3rem;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  );
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+   ========================================================= */
+
+.why-card {
+  transition:
+    background-color 0.26s ease,
+    border-color 0.26s ease,
+    transform 0.26s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .why-card:hover {
+    background: #0d0d0d;
+
+    transform: translateY(-3px);
+  }
+}
+
+
+/* =========================================================
+   AUTH INPUT
+   ========================================================= */
+
+.auth-input {
+  width: 100%;
+
+  border: 0 !important;
+
+  background: transparent !important;
+
+  padding:
+    1rem
+    1rem
+    1rem
+    3rem;
+
+  color: #ffffff !important;
+
+  font-family: var(--font-body);
+
+  font-size: 0.9rem;
+
+  outline: none;
+}
+
+.auth-input::placeholder {
+  color: #555555;
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+   ========================================================= */
+
+input,
+textarea,
+select {
+  background: var(--albo-surface) !important;
+
+  color: var(--albo-white) !important;
+
+  border-color: var(--albo-line) !important;
+
+  border-radius: 2px !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--albo-orange) !important;
+
+  box-shadow: none !important;
+
+  outline: none;
+}
+
+
+/* =========================================================
+   BACKDROP BLUR CONTROL
+   REDUCES AI / GLASSMORPHISM LOOK
+   ========================================================= */
+
+.backdrop-blur-sm,
+.backdrop-blur-md,
+.backdrop-blur-lg,
+.backdrop-blur-xl,
+.backdrop-blur-2xl,
+.backdrop-blur-3xl {
+  backdrop-filter: none !important;
+
+  -webkit-backdrop-filter: none !important;
+}
+
+
+/* =========================================================
+   REMOVE EXCESSIVE GLOW
+   ========================================================= */
+
+[class*="shadow-[0_0_"],
+[class*="shadow-[0_15px_"],
+[class*="shadow-[0_20px_"] {
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   GRADIENT TEXT SUPPORT
+   ========================================================= */
+
+.bg-clip-text {
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   ALBO BASIC ANIMATIONS
+   ========================================================= */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    transform:
+      translate(0, 0)
+      scale(1);
+  }
+
+  33% {
+    transform:
+      translate(30px, -50px)
+      scale(1.1);
+  }
+
+  66% {
+    transform:
+      translate(-20px, 20px)
+      scale(0.9);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .section-display {
+    font-size: clamp(
+      3.4rem,
+      17vw,
+      5.6rem
+    );
+  }
+
+  .section-kicker,
+  .auth-kicker {
+    letter-spacing: 0.24em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.015em;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+
+    scroll-behavior: auto !important;
+  }
+}
