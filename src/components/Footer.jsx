@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
               <div className="flex gap-3 text-sm">
                 <Mail size={20} className="text-orange-500 flex-shrink-0" />
-                <a href="mailto:" className="text-gray-400 hover:text-orange-500 transition-colors">info@albofitness.com</a>
+                <a href="mailto:info@albo-fitness.com" className="text-gray-400 hover:text-orange-500 transition-colors">info@albo-fitness.com</a>
               </div>
             </div>
           </div>
