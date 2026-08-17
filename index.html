@@ -2,51 +2,134 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary SEO tags -->
-    <title>ALBO Fitness | Gym & Personal Training in Trichy, Tamil Nadu</title>
-    <meta name="description" content="ALBO Fitness in Trichy, Tamil Nadu offers personal training, group classes, nutrition coaching, and membership plans. Transform your body, transform your life." />
+
+    <!-- Viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- Primary SEO -->
+    <title>ALBO Fitness | Gym & Personal Training in Trichy</title>
+
+    <meta
+      name="description"
+      content="ALBO Fitness is a gym and personal training center in Trichy, Tamil Nadu offering personal training, group classes, nutrition coaching, and membership plans."
+    />
+
+    <meta
+      name="keywords"
+      content="ALBO Fitness, gym in Trichy, gym in Tiruchirappalli, personal training Trichy, fitness center Trichy, personal trainer Trichy"
+    />
+
+    <meta name="author" content="ALBO Fitness" />
+
+    <!-- Tell search engines the preferred URL -->
     <link rel="canonical" href="https://albo-fitness.com/" />
-    <!-- Open Graph / Facebook, WhatsApp, LinkedIn preview -->
+
+    <!-- Robots -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- Google Site Name -->
+    <meta name="application-name" content="ALBO Fitness" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ALBO Fitness" />
     <meta property="og:url" content="https://albo-fitness.com/" />
-    <meta property="og:title" content="ALBO Fitness | Gym & Personal Training in Trichy, Tamil Nadu" />
-    <meta property="og:description" content="Transform your body, transform your life. Personal training, group classes, nutrition coaching, and membership plans at ALBO Fitness, Trichy." />
-    <meta property="og:image" content="https://albo-fitness.com/favicon-512.png" />
+
+    <meta
+      property="og:title"
+      content="ALBO Fitness | Gym & Personal Training in Trichy"
+    />
+
+    <meta
+      property="og:description"
+      content="Transform your body, transform your life. Personal training, group classes, nutrition coaching, and membership plans at ALBO Fitness, Trichy."
+    />
+
+    <meta
+      property="og:image"
+      content="https://albo-fitness.com/favicon-512.png"
+    />
+
+    <meta property="og:image:alt" content="ALBO Fitness" />
     <meta property="og:locale" content="en_IN" />
-    <!-- Twitter Card -->
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="ALBO Fitness | Gym & Personal Training in Trichy, Tamil Nadu" />
-    <meta name="twitter:description" content="Transform your body, transform your life. Personal training, group classes, nutrition coaching, and membership plans at ALBO Fitness, Trichy." />
-    <meta name="twitter:image" content="https://albo-fitness.com/favicon-512.png" />
-    <!-- Structured data: tells Google this is a Gym business -->
+
+    <meta
+      name="twitter:title"
+      content="ALBO Fitness | Gym & Personal Training in Trichy"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Personal training, group classes, nutrition coaching, and membership plans at ALBO Fitness, Trichy."
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://albo-fitness.com/favicon-512.png"
+    />
+
+    <!-- =====================================================
+         GOOGLE SITE NAME
+         Preferred name: ALBO Fitness
+         ===================================================== -->
     <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "ExerciseGym",
-  "name": "ALBO Fitness",
-  "url": "https://albo-fitness.com/",
- "logo": "https://albo-fitness.com/favicon-512.png",
-"image": "https://albo-fitness.com/favicon-512.png",
-  "telephone": "+91-883 862 3640",
-  "email": "info@albo-fitness.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Trichy",
-    "addressRegion": "Tamil Nadu",
-    "addressCountry": "IN"
-  },
-  "description": "ALBO Fitness offers personal training, group classes, nutrition coaching, and membership plans in Trichy, Tamil Nadu."
-}
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ALBO Fitness",
+        "alternateName": "ALBO",
+        "url": "https://albo-fitness.com/"
+      }
+    </script>
+
+    <!-- =====================================================
+         BUSINESS STRUCTURED DATA
+         ===================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ExerciseGym",
+        "@id": "https://albo-fitness.com/#gym",
+        "name": "ALBO Fitness",
+        "url": "https://albo-fitness.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://albo-fitness.com/favicon-512.png"
+        },
+        "image": "https://albo-fitness.com/favicon-512.png",
+        "description": "ALBO Fitness is a gym and personal training center in Trichy, Tamil Nadu offering personal training, group classes, nutrition coaching, and membership plans.",
+        "telephone": "+91-8838623640",
+        "email": "info@albo-fitness.com",
+
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Trichy",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        }
+      }
     </script>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
